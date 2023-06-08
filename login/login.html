@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <input id="signUpUSERNAME" type="username" placeholder="Username" />
+          <input id="signUpMail" type="email" placeholder="Email" />
+          <input id="signUpPass" type="password" placeholder="Password" />
+
+          <button id="signUpButton">Sign Up</button>
+
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <input id="signinMail" type="email" placeholder="Email" />
+          <input id="signinpass" type="password" placeholder="Password" />
+
+          <button id="signinButton"><a href="/home/" style="text-decoration: none; color: white !important;">Sign In</a></button>
+
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIndiv">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and take HI test!</p>
+
+            <button class="ghost" id="signUpdiv">Sign Up</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+import { sendEmailVerification } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js";
+// TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyC4TPnwmGiRc1LCp8OkNbmzuDNTt4hlGA0",
+        authDomain: "hi-authenticator.firebaseapp.com",
+        databaseURL: "https://hi-authenticator-default-rtdb.firebaseio.com",
+        projectId: "hi-authenticator",
+        storageBucket: "hi-authenticator.appspot.com",
+        messagingSenderId: "837627648450",
+        appId: "1:837627648450:web:b18c9bfa6f75cb861e1e5b"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+    
+      const signUpButton = document.getElementById('signUpButton');
+      const signInButton = document.getElementById('signinButton');
+
+    
+      signUpButton.addEventListener('click', (e) => {
+      var username = document.getElementById("signUpUSERNAME").value
+      var password = document.getElementById("signUpPass").value
+      var email = document.getElementById("signUpMail").value
+      createUserWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+        // Signed in 
+          const user = userCredential.user;
+          console.log("user created");
+          set(ref(database, 'users/'+ user.uid),{
+            username: username, 
+            email: email
+          })
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+        // ..
+      });
+      });
+      
+      signInButton.addEventListener('click', (e) => {
+      var password = document.getElementById("signinpass").value
+      var email = document.getElementById("signinMail").value
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log("signed in. what now?");
+    set(ref(database, 'signinlog/'+ user.uid),{ 
+            email: email,
+            time: Date()
+          })
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+      });
+
+function verifyEmail(){
+  sendEmailVerification(auth.currentUser)
+    .then(() => {
+      // Email verification sent!
+      //  ...
+      console.log("email sent.");
+  });}
+    </script>
+  <script>
+const signUpdiv = document.getElementById('signUpdiv');
+const signIndiv = document.getElementById('signIndiv');
+const container = document.getElementById('container');
+
+signUpdiv.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signIndiv.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+</script>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/jquery.js"></script>
+        <link rel="stylesheet" href="https://maharshi878.github.io/lib/betterbootstrap.css">
+        <link rel="stylesheet" href="/test/style.css">
+        <link rel="stylesheet" media="all" href="https://hpiquiz-production.herokuapp.com/packs/css/application-09570e42.css" />
+    </head>
+    <body class="body-white-poppins" style="text-align:center;">
+      
+        <div class="get-started">
+            <h1 class="header-black-poppins">Welcome to the test!</h1>
+            <p>Happiness Index</p>
+        </div><hr>
+        <!-- q1 --><br><br>
+        <div class="body-white-poppins test-2">
+            <h3 class="subheader-black-poppins">In the last month,</h3>
+            <h2 class="header-black-poppins">How often do you experience positive emotions, such as joy, gratitude, or contentment?</h2><br><br>
+            <br>
+            <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+              <div class="flex justify-between mt-12 h-32">
+                <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                  <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq1()"></a>
+                  <div class="mt-4 sm:relative absolute sm:block">
+                    <span class="numeric-anchor">Not at all</span>
+                  </div>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                  <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq1()"></a>
+                  <div class="mt-4 sm:relative absolute sm:block hidden">
+                    <span class="numeric-anchor">Not much</span>
+                  </div>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                  <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq1()"></a>
+                  <div class="mt-4 sm:relative absolute sm:block hidden">
+                    <span class="numeric-anchor">A little bit</span>
+                  </div>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                  <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq1()"></a>
+                  <div class="mt-4 sm:relative absolute sm:block hidden">
+                    <span class="numeric-anchor">A little bit often</span>
+                  </div>
+                </div>
+                <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                  <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq1()"></a>
+                  <div class="mt-4 sm:relative absolute sm:block">
+                    <span class="numeric-anchor">A LOT!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <!-- q2 --><br><br><br><br><br><br>         
+            <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often you find yourself taking notice and appreciating your surroundings and the people around you?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq2()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Not at all</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq2()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq2()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Twice in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq2()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Quit frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq2()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Like.. All the time</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q3 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How often you feel like you have learnt something new?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq3()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Not at all</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq3()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq3()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Twice in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq3()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Quite frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq3()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Regularly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q4 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How often you feel supportive and helpful to your close circle of people and engage in acts of kindness or compassion towards them?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq4()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Not at all</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq4()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq4()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Twice in a full moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq4()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Quite frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq4()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Always here for them</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q5 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How often you have found yourself falling for addictions/smoking/tobacco products?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq5()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">>5 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq5()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">3-4 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq5()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-2 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq5()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-3 times/month</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq5()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Never</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q6 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How often did you take 30 minutes or more of moderate exercise, such as brisk walking, cycling, sport, active recreation, or physical work – sufficient to cause you to breathe more deeply?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq6()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Never</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq6()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-3 times/month</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq6()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-2 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq6()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">3-4 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq6()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">>5 times/week</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q7 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How frequently have you experienced changes in appetite or weight?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq7()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Never</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq7()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-3 times/month</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq7()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-2 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq7()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">3-4 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq7()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">>5 times/week</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q8 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often you had healthy sleep at nigth and woke up feeling refreshed?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq8()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Never</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq8()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-3 times/month</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq8()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">1-2 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq8()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">3-4 times/week</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq8()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">>5 times/week</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q9 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often have you felt irritable or easily agitated?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq9()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq9()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq9()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Occasionally</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq9()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq9()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">I'm a calm person</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q10 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">Now in the last 12 months,</h3>
+                <h2 class="header-black-poppins">How often did you go travel long or short?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq10()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very rarely</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq10()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Rarely</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq10()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Occasionally</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq10()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq10()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q11 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How often you feel like you lost your patience with some-one/situation or you feel like you could've handled it better?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq11()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq11()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Twice in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq11()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq11()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Not that often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq11()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Almost never</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q12 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often you find yourself avoiding situations that gets you attention?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq12()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq12()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Twice in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq12()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq12()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">I don't avoid/mind the attention</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq12()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">I love attention</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q13 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h3 class="subheader-black-poppins">In the last month,</h3>
+                <h2 class="header-black-poppins">How frequently have you experienced a loss of interest in personal grooming or self-care?</h2>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq13()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">I always dress perfectly</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq13()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">When I don't feel like</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq13()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">I only dress when I have to</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq13()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq13()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q14 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often have you felt stressed or overwhelmed or anxious?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq14()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very often</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq14()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq14()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Sometimes</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq14()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Rarely</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq14()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very rarely</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q15 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often you had end up doing things at the last possible moment?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq15()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Like.. Always</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq15()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Sometimes</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq15()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq15()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Rarely</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq15()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very rarely</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q16 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often have you experienced difficulty concentrating or making decisions?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq16()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq16()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq16()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Sometimes</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq16()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq16()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Rarely</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- q17 --><br><br><br><br><br><br>
+              <div class="body-white-poppins test-2">
+                <h1 class="subheader-black-poppins">In the last month,</h1>
+                <h1 class="header-black-poppins">How often have you felt sad, hopeless or downhearted?</h1>
+                <br>
+                <div class="border-box mt-10 text-center lg:w-3/4 w-full mx-auto">
+                  <div class="flex justify-between mt-12 h-32">
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative red" style="padding-left:50px;">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta1forq17()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Very frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative orange">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta2forq17()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Frequently</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative yellow">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta3forq17()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Sometimes</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative light-green">
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta4forq17()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block hidden">
+                        <span class="numeric-anchor">Once in a blue moon</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:mr-12 numeric-option-container relative green" >
+                      <a class="numeric-option" data-remote="true" rel="nofollow" data-method="patch" onclick="seta5forq17()"></a>
+                      <div class="mt-4 sm:relative absolute sm:block">
+                        <span class="numeric-anchor">Rarely</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                                                                
+        </div>
+        <script src="/test/script.js" async defer></script>
+    </body>
+</html>

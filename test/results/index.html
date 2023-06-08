@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/jquery.js"></script>
+        <link rel="stylesheet" href="https://maharshi878.github.io/lib/betterbootstrap.css">
+        <link rel="stylesheet" href="/test/style.css">
+        <link rel="stylesheet" media="all" href="https://hpiquiz-production.herokuapp.com/packs/css/application-09570e42.css" />
+    </head>
+    <body class="body-white-poppins" style="text-align:center;" onload="resultAlgorithm()">
+      
+        <div class="get-started">
+            <h1 class="header-black-poppins">View your results here!</h1>
+            <p>Happiness Index</p>
+        </div><hr>
+          <h1 class="header-black-poppins"><span id="resetIfTestNotTaken">Your score was - </span><span id ="resultDisplayMarks"> </span></h1>
+          <div id="hideIfTestNotTaken">
+            <h1 class="subheader-black-poppins"><span id="resetIfTestNotTaken">Your total (rounded) percentage in this test are - </span><span class="subheader-black-poppins" id ="resultDisplayPercentage"></span>%</h1>
+          </div>
+        <script src="/test/results/resultAlgorithm.js" async defer></script>
+    </body>
+</html>
