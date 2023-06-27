@@ -7,14 +7,53 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="/js/jquery.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maharshi878.github.io/lib/betterbootstrap.css">
         <link rel="stylesheet" href="/test/style.css">
         <link rel="stylesheet" media="all" href="https://hpiquiz-production.herokuapp.com/packs/css/application-09570e42.css" />
     </head>
     <body class="body-white-poppins" style="text-align:center;">
+      <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+          <a href="/home/" class="w3-bar-item w3-button w3-wide"><img src="\home\hi.gif" style="height: 50px;" alt="logo" /></a>
+          <div class="w3-right w3-hide-small">
+            <a href="/test/" class="w3-bar-item w3-button">Take HI Test</a>
+            <a href="/about/" class="w3-bar-item w3-button"> ABOUT HI</a>
+          </div>
+          <a href="javascript:void(0)" id="navbar-toggle" class="material-symbols-outlined w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+        <a href="/test/" onclick="w3_close()" class="w3-bar-item w3-button">TAKE HI TEST</a>
+        <a href="/about/" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      </nav>
+      <script>
+        function pagerdr() {
+         window.location.href = "/home"; 
+        }
+        var mySidebar = document.getElementById("mySidebar");
+      
+      function w3_open() {
+       if (mySidebar.style.display === 'block') {
+         mySidebar.style.display = 'none';
+       } else {
+         mySidebar.style.display = 'block';
+       }
+      }
+      
+      // Close the sidebar with the close button
+      function w3_close() {
+         mySidebar.style.display = "none";
+      }
+      </script>
       
         <div class="get-started">
-            <h1 class="header-black-poppins">Welcome to the test!</h1>
+            <h1 class="header-black-poppins" style="margin: 40px;">Welcome to the test!</h1>
             <p>Happiness Index</p>
         </div><hr>
         <!-- q1 --><br><br>
@@ -697,7 +736,10 @@
                   </div>
                 </div>
               </div>
-                                                                
+              <div class="rdr-button"><button onclick="redirect()" class="subheader-black-poppins" style=" border-radius:40px;margin: 40px;background-color: #ffffff00;color: black;border-color:black;">
+                View test Results
+              </button>
+              </div>                                                  
         </div>
         <script src="/test/script.js" async defer></script>
     </body>

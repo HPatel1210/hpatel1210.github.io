@@ -1,4 +1,6 @@
-
+function redirect(){
+    window.location = "/test/results";
+}
 
 function seta1forq1() {
     localStorage.setItem("q1", "1");

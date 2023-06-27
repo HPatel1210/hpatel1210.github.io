@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About HI : say HI to Happiness</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="/js/jquery.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maharshi878.github.io/lib/betterbootstrap.css">
+        <link rel="stylesheet" href="/test/style.css">
+        <link rel="stylesheet" media="all" href="https://hpiquiz-production.herokuapp.com/packs/css/application-09570e42.css" />
+    </head>
+    <body class="body-white-poppins" style="background-color:#CCD5AE; text-align:center;">
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+              <a href="/home/" class="w3-bar-item w3-button w3-wide"><img src="\home\hi.gif" style="height: 50px;" alt="logo" /></a>
+              <div class="w3-right w3-hide-small">
+                <a href="/test/" class="w3-bar-item w3-button">Take HI Test</a>
+                <a href="/about/" class="w3-bar-item w3-button"> ABOUT HI</a>
+              </div>
+              <a href="javascript:void(0)" id="navbar-toggle" class="material-symbols-outlined w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </div>
+          <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+            <a href="/test/" onclick="w3_close()" class="w3-bar-item w3-button">TAKE HI TEST</a>
+            <a href="/about/" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+          </nav>
+          
+        <style>
+            .container {
+              display: flex;
+              align-items: left;
+              justify-content: left;
+            }
+            img {
+              max-width: 100% 
+            }
+            .image {
+              flex-basis: 40;
+            }
+            .text {
+              font-size: 20px;
+            }
+          </style>
+               <div class="container">
+                <div class="image">
+                  <img src="lets think.png">
+                </div>
+                <div class="text">
+                  <h1 class="header-white-poppins" style="padding-top:30vh;">Analysis</h1>
+                  <h1 class="subheader-white-poppins">on your happiness index</h1>
+                </div>
+              </div><hr>
+            <br><br>
+            <div class='container img' style="text-align: center;">
+                <img class='imgclss'
+                  src='small things.png' />
+                </a>
+            </div>
+           
+            <pre style="text-shadow: rgba(89, 104, 79, 0.849) 1px 0 2px; color:white;text-align:left;padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 200px;">
+                 
+            - This category represents students with a relatively lower happiness index.
+            - Identifying concerns: Analyze the specific factors that may be contributing to their lower happiness index, such as lack of engagement, negative emotions, unsupportive teacher-student relationships, inadequate parental involvement, unclean or unsafe environment, etc.
+            - Intervention strategies: Develop targeted interventions to address these concerns.
+                   
+            For example:
+                - Enhancing engagement: Implement innovative teaching methods, promote hands-on learning, and provide opportunities for student participation and collaboration.
+                - Emotional well-being: Incorporate mindfulness or well-being programs, promote emotional intelligence, and provide counseling or support services.
+                - Teacher-student relationships: Conduct teacher training programs to improve their interpersonal skills and create a respectful and inclusive classroom environment.
+                - Parental involvement: Establish channels for effective communication between parents and teachers, organize parent engagement activities, and seek their input in decision-making processes.
+                - Infrastructure improvement: Ensure the school environment is clean, safe, and conducive to learning.
+
+            Here are some recommended physical and mental exercises for students falling into each category of the happiness index:
+                - Physical exercises:
+                    - Outdoor activities: Encourage students to participate in sports, team games, or other physical activities to promote fitness and overall well-being.
+                    - Yoga or stretching exercises: Introduce simple yoga poses or stretching routines that help students relax, improve flexibility, and release tension.
+                - Mental exercises:
+                    - Mindfulness or meditation: Teach students mindfulness techniques to focus on the present moment, reduce stress, and enhance self-awareness.
+                    - Journaling: Encourage students to maintain a journal to express their thoughts, emotions, and experiences, promoting self-reflection and emotional processing.
+                    - Positive affirmations: Guide students to practice positive self-talk and affirmations to boost their self-esteem and resilience.
+                     
+                    </pre>
+
+
+        <div class="body-white-poppins test-2">
+                    
+        </div>
+        <script src="/test/script.js" async defer></script>
+    </body>
+    <script>
+        function pagerdr() {
+         window.location.href = "/home"; 
+        }
+        var mySidebar = document.getElementById("mySidebar");
+      
+      function w3_open() {
+       if (mySidebar.style.display === 'block') {
+         mySidebar.style.display = 'none';
+       } else {
+         mySidebar.style.display = 'block';
+       }
+      }
+      
+      // Close the sidebar with the close button
+      function w3_close() {
+         mySidebar.style.display = "none";
+      }
+      </script>
+</html>

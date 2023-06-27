@@ -39,8 +39,8 @@ function resultAlgorithm() {
     var maxMarks = 85;
     var percentage = obtainedMarks / maxMarks * 100;
     percentage = Math.round(percentage);
-    console.log(percentage);
     document.getElementById("resultDisplayPercentage").innerHTML = percentage;
+    document.getElementById("resultDisplayMarks").innerHTML = obtainedMarks;
     localStorage.setItem("attemptTime", Date());
 }
 
