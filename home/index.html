@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="bootstrap-reboot.css">
     <link rel="stylesheet" href="style.mobirise.css">
+    <script src="https://r.mobirisesite.com/297470/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://r.mobirisesite.com/297470/assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="https://r.mobirisesite.com/297470/assets/ytplayer/index.js"></script>
+    <script src="https://r.mobirisesite.com/297470/assets/theme/js/script.js"></script>
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&amp;display=swap"
       as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -151,14 +156,14 @@ body {
    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
 </style>
   </head>
-  <body>
+  <body onload="checkIfSignedIn()">
     <div class="w3-top">
       <div class="w3-bar w3-white w3-card" id="myNavbar">
         <a href="/home/" class="w3-bar-item w3-button w3-wide"><img src="hi.gif" style="height: 50px;" alt="logo" /></a>
         <div class="w3-right w3-hide-small">
           <a href="/test/" class="w3-bar-item w3-button">Take HI Test</a>
           <a href="/about/" class="w3-bar-item w3-button"> ABOUT HI</a>
-          <a href="/login/login.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
+          <a href="/login/login.html" onclick="w3_closeLogout()" class="w3-bar-item w3-button">SIGN OUT</a>
         </div>
         <a href="javascript:void(0)" id="navbar-toggle" class="material-symbols-outlined w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
           <i class="fa fa-bars"></i>
@@ -169,27 +174,9 @@ body {
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
       <a href="/test/" onclick="w3_close()" class="w3-bar-item w3-button">TAKE HI TEST</a>
       <a href="/result/" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT HI</a>
-      <a href="/login/login.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
+      <a href="/login/login.html" onclick="w3_closeLogout()" class="w3-bar-item w3-button">SIGN OUT</a>
     </nav>
-    <script>
-      function pagerdr() {
-       window.location.href = "/home"; 
-      }
-      var mySidebar = document.getElementById("mySidebar");
-    
-    function w3_open() {
-     if (mySidebar.style.display === 'block') {
-       mySidebar.style.display = 'none';
-     } else {
-       mySidebar.style.display = 'block';
-     }
-    }
-    
-    // Close the sidebar with the close button
-    function w3_close() {
-       mySidebar.style.display = "none";
-    }
-    </script>
+   
     <section id="top-1" style="display: none;"></section>
     <section data-bs-version="5.1" class="header18 cid-tBpTCbItIP
       mbr-fullscreen" id="header18-m">
@@ -212,11 +199,7 @@ body {
           <li><a href="https://twitter.com/intent/tweet?text=I just took a happiness test on https://hpatel1210.github.io/home ! Take your test now!">Share on Twitter</a></li>
         </ul>
       </div>
-    </section><script src="https://r.mobirisesite.com/297470/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script
-      src="https://r.mobirisesite.com/297470/assets/smoothscroll/smooth-scroll.js"></script>
-    <script src="https://r.mobirisesite.com/297470/assets/ytplayer/index.js"></script>
-    <script src="https://r.mobirisesite.com/297470/assets/theme/js/script.js"></script>
+    </section>
     <script>
       function actionToggle() {
         const action = document.querySelector('.action');
@@ -234,10 +217,19 @@ body {
        mySidebar.style.display = 'block';
      }
     }
-    
-    // Close the sidebar with the close button
     function w3_close() {
        mySidebar.style.display = "none";
     }
+    // Close the sidebar with the close button
+    function w3_closeLogout() {
+       mySidebar.style.display = "none";
+       localStorage.setItem("isSignedIn", "false")
+    }
+    var isSignedIn = localStorage.getItem("isSignedIn");
+      function checkIfSignedIn(){
+        if (isSignedIn == "false"){
+          window.location = "/login/login.html";
+        }
+      }
     </script>
   </body></html> 
