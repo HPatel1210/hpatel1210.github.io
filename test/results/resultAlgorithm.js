@@ -42,5 +42,15 @@ function resultAlgorithm() {
     document.getElementById("resultDisplayPercentage").innerHTML = percentage;
     document.getElementById("resultDisplayMarks").innerHTML = obtainedMarks;
     localStorage.setItem("attemptTime", Date());
+    var level = "nul";
+    if (percentage <= 35){
+        level = "lessthan35";
+        document.getElementById("buttonToAnalysis").href = "/analysis/index1.html";
+    } else if(percentage <= 70 && percentage > 35){
+        level = "lessthan70morethan35";
+        document.getElementById("buttonToAnalysis").href = "/analysis/index2.html";
+    } else{
+        level = "morethan70"
+        document.getElementById("buttonToAnalysis").href = "/analysis/index3.html";
+    }
 }
-
